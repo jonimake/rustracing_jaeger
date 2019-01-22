@@ -1,7 +1,7 @@
 [package]
 name = "rustracing_jaeger"
 version = "0.1.9"
-authors = ["Takeru Ohta <phjgt308@gmail.com>"]
+authors = ["Takeru Ohta <phjgt308@gmail.com>","Joni Mäkelä <joni.makela@gmail.com>"]
 description = "Jaeger client library created on top of rustracing"
 homepage = "https://github.com/sile/rustracing_jaeger"
 repository = "https://github.com/sile/rustracing_jaeger"

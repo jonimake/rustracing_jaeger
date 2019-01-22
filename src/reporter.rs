@@ -115,7 +115,7 @@ struct JaegerReporter {
 }
 impl JaegerReporter {
     fn new(service_name: &str, port: u16) -> Result<Self> {
-        let socket = track!(UdpSocket::bind("127.0.0.1:0").map_err(error::from_io_error))?;
+        let socket = track!(UdpSocket::bind("0.0.0.0:0").map_err(error::from_io_error))?;
         let process = jaeger::Process {
             service_name: service_name.to_owned(),
             tags: Vec::new(),
